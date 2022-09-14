@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hello World!</title>
+        <title>UAT Space Program!!</title>
     </head>
     <body> 
-        <hl>Look at this top level page heading!</hl>
-        <p>Wow! This text is in pharagraph tag!</p>
-        <button id="btnAlert"
-        onClick="alert('This is an alert')";>
-        Click me!</button>
-    </body>
-<html>
+
+<!-- Headers, Images, and Pharagraphs.-->
+<h1> Welcome, to the UAT Space Program :) </h1>
+<img src="UatSpaceLogo.jpg">
+<h3>Look at this top level page heading!</h3>     
+<p>
+    This is a pharagraph! Woah! Isn't that nifty? Lorem Ipsum Lorem Ipsum Lorem Ipsum
+    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+</p>
+
+<!-- Buttons-->
+<button id="btnAlert"
+onClick="alert('This is an alert')";> Click me!</button>
+<br>
+<br>
+<button>Start</button>
+<button>Stop</button>
+
+<!-- Storing Countdown Function-->
+<p>
+    Countdown: <span id="DisplayCountdown">Ready whenever you are, Captain!</span>
+</p>
+
+<!-- <script> changes the code type from HTML to JavaScript-->
+<script> 
+// Creating the Countdown Squence for "Blastoff"
+
+    currTime = 50;
+    var timeOut = 1000;
+
+    let x = document.getElementById("DisplayCountdown"); //Setting a variable x to interact with the Display count down elemennt
+
+    //The settimeout function is the javaj script built in function to delay the page rendering
+    setTimeout(function(){
+        x.innerHTML = currTime //X.innerhtml is the <span> function abvove on line 27
+        currTime = currTime = 5;
+    }, timeOut);
+    timeOut = timeOut + 1000;
+
+
+
+
+</script>
