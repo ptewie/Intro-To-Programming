@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<!-- NAME: Zak Habul! CSC102-->
+
 <html>
     <head>
         <title>UAT Space Program!!</title>
@@ -22,27 +25,97 @@ onClick="alert('This is an alert')";> Click me!</button>
 <button>Start</button>
 <button>Stop</button>
 
+
 <!-- Storing Countdown Function-->
 <p>
-    Countdown: <span id="DisplayCountdown">Ready whenever you are, Captain!</span>
+    Countdown: <span id="DisplayCountdown">Here we go! Countdown starting!</span>
 </p>
+
+
+<!-- Putting in custom image for Blastoff Assignment-->
+
+<img src="BadlyDrawnRocket.jpg">;
+<p>
+    This is a badly drawn rocket ship! 
+</p>
+
 
 <!-- <script> changes the code type from HTML to JavaScript-->
 <script> 
 // Creating the Countdown Squence for "Blastoff"
 
     currTime = 50;
-    var timeOut = 1000;
+    var timeOut = 5000;
 
     let x = document.getElementById("DisplayCountdown"); //Setting a variable x to interact with the Display count down elemennt
 
-    //The settimeout function is the javaj script built in function to delay the page rendering
+    //The settimeout function is the JavaScript built in function to delay the page rendering
     setTimeout(function(){
         x.innerHTML = currTime //X.innerhtml is the <span> function abvove on line 27
-        currTime = currTime = 5;
+        currTime = currTime-5;
     }, timeOut);
-    timeOut = timeOut + 1000;
+    timeOut = timeOut + 5000;
 
+    setTimeout(function(){
+        x.innerHTML = currTime //Copy and Pasting the setTimeout Function and subtracting currTime by 5 until it reaches 0
+        currTime = currTime-5;
+    }, timeOut);
+    timeOut = timeOut + 5000;
+
+    setTimeout(function(){
+        x.innerHTML = currTime 
+        currTime = currTime-5;
+    }, timeOut);
+    timeOut = timeOut + 5000;
+
+    setTimeout(function(){
+        x.innerHTML = currTime 
+        currTime = currTime-5;
+    }, timeOut);
+    timeOut = timeOut + 5000;
+
+    setTimeout(function(){
+        x.innerHTML = currTime 
+        currTime = currTime-5;
+    }, timeOut);
+    timeOut = timeOut + 5000;
+
+    setTimeout(function(){
+        x.innerHTML = currTime 
+        currTime = currTime-5;
+    }, timeOut);
+    timeOut = timeOut + 5000;
+
+    setTimeout(function(){
+        x.innerHTML = currTime 
+        currTime = currTime-5;
+    }, timeOut);
+
+    setTimeout(function(){
+        x.innerHTML = currTime 
+        currTime = currTime-5;
+    }, timeOut);
+    timeOut = timeOut + 5000;
+
+    setTimeout(function(){
+        x.innerHTML = currTime 
+        currTime = currTime-5;
+    }, timeOut);
+    timeOut = timeOut + 5000;
+
+    setTimeout(function(){
+        x.innerHTML = currTime 
+        currTime = currTime-5;
+    }, timeOut);
+    timeOut = timeOut + 5000;
+    timeOut = timeOut + 5000;
+ 
+    setTimeout(function(){   //Countdown over!!!!!
+        x.innerHTML = currTime 
+        alertP("PACHOOOOOOO!!!!!!!! Blastoff!!!");
+    }, timeOut);
+    timeOut = timeOut + 5000;
+    timeOut = timeOut + 5000;
 
 
 
