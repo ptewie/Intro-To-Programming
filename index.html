@@ -5,6 +5,7 @@
 <html>
     <head>
         <title>UAT Space Program!!</title>
+        <script src="code.js"></script> <!-- Pulling info from code.js-->
     </head>
     <body> 
 
@@ -41,80 +42,12 @@ onClick="alert('This is an alert')";> Click me!</button>
 
 
 <!-- <script> changes the code type from HTML to JavaScript-->
+
 <script> 
-// Creating the Countdown Squence for "Blastoff"
-
-    currTime = 50;
-    var timeOut = 5000;
-
-    let x = document.getElementById("DisplayCountdown"); //Setting a variable x to interact with the Display count down elemennt
-
-    //The settimeout function is the JavaScript built in function to delay the page rendering
-    setTimeout(function(){
-        x.innerHTML = currTime //X.innerhtml is the <span> function abvove on line 27
-        currTime = currTime-5;
-    }, timeOut);
-    timeOut = timeOut + 5000;
-
-    setTimeout(function(){
-        x.innerHTML = currTime //Copy and Pasting the setTimeout Function and subtracting currTime by 5 until it reaches 0
-        currTime = currTime-5;
-    }, timeOut);
-    timeOut = timeOut + 5000;
-
-    setTimeout(function(){
-        x.innerHTML = currTime 
-        currTime = currTime-5;
-    }, timeOut);
-    timeOut = timeOut + 5000;
-
-    setTimeout(function(){
-        x.innerHTML = currTime 
-        currTime = currTime-5;
-    }, timeOut);
-    timeOut = timeOut + 5000;
-
-    setTimeout(function(){
-        x.innerHTML = currTime 
-        currTime = currTime-5;
-    }, timeOut);
-    timeOut = timeOut + 5000;
-
-    setTimeout(function(){
-        x.innerHTML = currTime 
-        currTime = currTime-5;
-    }, timeOut);
-    timeOut = timeOut + 5000;
-
-    setTimeout(function(){
-        x.innerHTML = currTime 
-        currTime = currTime-5;
-    }, timeOut);
-
-    setTimeout(function(){
-        x.innerHTML = currTime 
-        currTime = currTime-5;
-    }, timeOut);
-    timeOut = timeOut + 5000;
-
-    setTimeout(function(){
-        x.innerHTML = currTime 
-        currTime = currTime-5;
-    }, timeOut);
-    timeOut = timeOut + 5000;
-
-    setTimeout(function(){
-        x.innerHTML = currTime 
-        currTime = currTime-5;
-    }, timeOut);
-    timeOut = timeOut + 5000;
-    timeOut = timeOut + 5000;
- 
-    setTimeout(function(){   //Countdown over!!!!!
-        x.innerHTML = currTime 
-        alert("PACHOOOOOOO!!!!!!!! Blastoff!!!");
-    }, timeOut);
-
+// Connecting to Blast off function in code.js
+let countDownStart = document.getElementById("DisplayCountdown"); // by defining countdownStart here.
+runTimer(countDownStart);                                         // code.js to apply the blast off
+                                                                 // code to the runTimer function.
 
 
 </script>
