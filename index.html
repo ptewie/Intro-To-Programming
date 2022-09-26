@@ -7,12 +7,13 @@
         <title>UAT Space Program!!</title>
         <script src="code.js"></script> <!-- Pulling info from code.js-->
     </head>
-    <body> 
+    <center> <!-- <center> generally not used, just to center all the text on this webpage.  -->
+    <body style="background-color: lightyellow;"> 
 
 <!-- Headers, Images, and Pharagraphs.-->
 <h1> Welcome, to the UAT Space Program :) </h1>
 <img src="UatSpaceLogo.jpg">
-<h3>Look at this top level page heading!</h3>     
+<h3>We are preparing for liftoff! Join us!</h3>     
 <p>
     This is a pharagraph! Woah! Isn't that nifty? Lorem Ipsum Lorem Ipsum Lorem Ipsum
     Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
@@ -35,7 +36,7 @@ onClick="alert('This is an alert')";> Click me!</button>
 
 <!-- Putting in custom image for Blastoff Assignment-->
 
-<img src="BadlyDrawnRocket.jpg">;
+<img src="BadlyDrawnRocket.jpg">
 <p>
     This is a badly drawn rocket ship! 
 </p>
@@ -44,6 +45,12 @@ onClick="alert('This is an alert')";> Click me!</button>
 <!-- <script> changes the code type from HTML to JavaScript-->
 
 <script> 
+
+// calling function displayAlert from code.js
+    displayAlert("Counting up by: ") //displaying text
+    
+
+
 // Connecting to Blast off function in code.js
 let countDownStart = document.getElementById("DisplayCountdown"); // by defining countdownStart here.
 runTimer(countDownStart);                                         // code.js to apply the blast off
