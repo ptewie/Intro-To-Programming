@@ -13,89 +13,31 @@ function stopButtonclick(){} //empty for now
    i used as an industry stand in
    I'm new so instead im going to use a more desrbitive variable name, being "counter"
 */
-function displayAlert (alertText){ 
-    for(counter=0; counter < 5; counter++){  //counter starts at 0, adds until counter is greater then 5, where it stops
-        alert(alertText + counter);
-    }
-    }
 
 // Example for Counter Loop that decreases by 1
 /*   for(counter=10, counter < 0; counter--){  
         alert(alertText + "minus" + counter);
     }
 */
+
+/* OLD function runTimer Function
 function runTimer(countDownStart){ //The countDownStart varaible is defined in index.html
-currTime = 50;
-var timeOut = 5000;
+
+*/
 
 
+function runTimer(countDownStart){
+    currTime = 50;
+    var timeOut = 5000;
+    for (counter = 0; counter < 10; counter++){
+        setTimeout(function(){
+            countDownStart.innerHTML = currTime
+            currTime = currTime-5; // Creating Delay when loading up page
+        
+            if (counter > 3){  //Something is wrong with if statement here, it does not read
+            alert ("test" + counter)}, timeOut);
+        timeOut = timeOut + 5000;
+        }
+    } 
+    
 
-// THIS WILL EVENTUALLY BE REPLACED WITH A LOOP!!!!!!!
-//The settimeout function is the JavaScript built in function to delay the page rendering too fast.
-setTimeout(function(){
-    countDownStart.innerHTML = currTime
-    currTime = currTime-5;
-}, timeOut);
-timeOut = timeOut + 5000;
-
-setTimeout(function(){
-    countDownStart.innerHTML = currTime //Copy and Pasting the setTimeout Function and subtracting currTime by 5 until it reaches 0
-    currTime = currTime-5;
-}, timeOut);
-timeOut = timeOut + 5000;
-
-setTimeout(function(){
-    countDownStart.innerHTML = currTime 
-    currTime = currTime-5;
-}, timeOut);
-timeOut = timeOut + 5000;
-
-setTimeout(function(){
-    countDownStart.innerHTML = currTime 
-    currTime = currTime-5;
-}, timeOut);
-timeOut = timeOut + 5000;
-
-setTimeout(function(){
-    countDownStart.innerHTML = currTime 
-    currTime = currTime-5;
-}, timeOut);
-timeOut = timeOut + 5000;
-
-setTimeout(function(){
-    countDownStart.innerHTML = currTime 
-    currTime = currTime-5;
-}, timeOut);
-timeOut = timeOut + 5000;
-
-setTimeout(function(){
-    countDownStart.innerHTML = currTime 
-    currTime = currTime-5;
-}, timeOut);
-
-setTimeout(function(){
-    countDownStart.innerHTML = currTime 
-    currTime = currTime-5;
-}, timeOut);
-timeOut = timeOut + 5000;
-
-setTimeout(function(){
-    countDownStart.innerHTML = currTime 
-    currTime = currTime-5;
-}, timeOut);
-timeOut = timeOut + 5000;
-
-setTimeout(function(){
-    countDownStart.innerHTML = currTime 
-    currTime = currTime-5;
-}, timeOut);
-timeOut = timeOut + 5000;
-timeOut = timeOut + 5000;
-
-setTimeout(function(){   //Countdown over!!!!!
-    countDownStart.innerHTML = currTime 
-    alert("PACHOOOOOOO!!!!!!!! Blastoff!!!"); // Displaying alert for end of comment
-}, timeOut);
-
-
-}
