@@ -30,14 +30,25 @@ function runTimer(countDownStart){
     currTime = 50;
     var timeOut = 5000;
     for (counter = 0; counter < 10; counter++){
-        setTimeout(function(){
-            countDownStart.innerHTML = currTime
+        setTimeout(function(){ //Basically a nested function
             currTime = currTime-5; // Creating Delay when loading up page
-        
-            if (counter > 3){  //Something is wrong with if statement here, it does not read
-            alert ("test" + counter)}, timeOut);
-        timeOut = timeOut + 5000;
+            
+            if (currTime < 25){  //Something is wrong with if statement here, it does not read?
+                countDownStart.innerHTML = "Warning Less than ½ way to launch, time left = " + currTime // Adding text before countdown
+            }
+            else   {
+                countDownStart.innerHTML = currTime  
+                
+            }
+
+            if (currTime == 0){
+                countDownStart.innerHTML = "Pachooo!!!! Blast off!"
+            }
+            
+            
+            }    , timeOut); // Set timemout on line 33, the setTimeout function is being called, as a paramater to the function, we're creating a paramater
+                             // timeOut is the secound argument, it's asking "what is the delay."
+        timeOut = timeOut + 5000; //
         }
     } 
     
-
