@@ -22,7 +22,6 @@ function stopButtonclick(){} //empty for now
 
 /* OLD function runTimer Function
 function runTimer(countDownStart){ //The countDownStart varaible is defined in index.html
-
 */
 
 
@@ -32,8 +31,10 @@ function runTimer(countDownStart){
     for (counter = 0; counter < 10; counter++){
         setTimeout(function(){ //Basically a nested function
             currTime = currTime-5; // Creating Delay when loading up page
-            
-            if (currTime < 25){  //Something is wrong with if statement here, it does not read?
+
+            if (currTime > 25){  // changed < to >, creating logic error. 
+                // debugging alert should only appear when currTime is less than 25
+                alert("curr time variable" + currTime)
                 countDownStart.innerHTML = "Warning Less than ½ way to launch, time left = " + currTime // Adding text before countdown
             }
             else   {
@@ -51,4 +52,3 @@ function runTimer(countDownStart){
         timeOut = timeOut + 5000; //
         }
     } 
-    
