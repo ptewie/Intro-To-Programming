@@ -11,13 +11,14 @@
     <body style="background-color: lightyellow;"> 
 
 <!-- Headers, Images, and Pharagraphs.-->
-<h1> Welcome, to the UAT Space Program :) </h1>
+<h1> Welcome, <span id="nameInfo"></span> to the UAT Space Program! </h1>
 <img src="UatSpaceLogo.jpg">
 <h3>We are preparing for liftoff! Join us!</h3>     
 <p>
     This is a pharagraph! Woah! Isn't that nifty? Lorem Ipsum Lorem Ipsum Lorem Ipsum
     Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
 </p>
+
 
 <!-- Buttons-->
 <button id="btnAlert"
@@ -46,6 +47,8 @@ onClick="alert('This is an alert')";> Click me!</button>
 
 <script> 
 
+// Calling getUserInput function from code.js
+getUserInput(document.getElementById("nameInfo"));
 
 
 
