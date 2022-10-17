@@ -1,3 +1,5 @@
+//GETTING USER INPUT FUNCTION AND CHARACTER LIMITS
+
 function getUserInput(nameElement){ //Getting the User's Name. 
     //do while function 
     do {
@@ -33,30 +35,19 @@ function getUserInput(nameElement){ //Getting the User's Name.
 
 // DEFINING startButtonClick() function.
 
-function startButtonClick(){} //empty for now
+function startButtonClick(){
+    document.getElementById("btnStart").disabled = true; //Making it so when you click start, it disables it and enables
+    document.getElementById("btnStop").disabled = false; //the ability to click stop
+} 
 
 // DEFINING stopButtonClick() function.
 
-function stopButtonclick(){} //empty for now
+function stopButtonClick(){
+    document.getElementById("btnStart").disabled = false; //opposite of sister function above
+    document.getElementById("btnStop").disabled = true;
+} //empty for now
 
 //----------BLAST OFF START / COUNTDOWN FUNCTION DEFINING-----------------------------------
-
-// Loop for Countdown Function
-/* i is a regular variable usually, but counter variables are used so often that
-   i used as an industry stand in
-   I'm new so instead im going to use a more desrbitive variable name, being "counter"
-*/
-
-// Example for Counter Loop that decreases by 1
-/*   for(counter=10, counter < 0; counter--){  
-        alert(alertText + "minus" + counter);
-    }
-*/
-
-/* OLD function runTimer Function
-function runTimer(countDownStart){ //The countDownStart varaible is defined in index.html
-*/
-
 
 function runTimer(countDownStart){
     currTime = 50;
