@@ -1,3 +1,7 @@
+var intervalIds = new Array(); //Telling JS that it's going to be an arry. not how many items there is in it. that's not needed.
+
+
+
 //GETTING USER INPUT FUNCTION AND CHARACTER LIMITS
 
 function getUserInput(nameElement){ //Getting the User's Name. 
@@ -38,6 +42,8 @@ function getUserInput(nameElement){ //Getting the User's Name.
 function startButtonClick(){
     document.getElementById("btnStart").disabled = true; //Making it so when you click start, it disables it and enables
     document.getElementById("btnStop").disabled = false; //the ability to click stop
+    let countDownStart = document.getElementById("DisplayCountdown"); 
+    runTimer(countDownStart);  //Tim,er starts when button is clicked
 } 
 
 // DEFINING stopButtonClick() function.
@@ -45,6 +51,12 @@ function startButtonClick(){
 function stopButtonClick(){
     document.getElementById("btnStart").disabled = false; //opposite of sister function above
     document.getElementById("btnStop").disabled = true;
+
+    for (counter = 0; counter < 10; counter++){
+        clearTimeout(intervalIds[counter]); //Stops countdown when clicked
+    }
+
+
 } //empty for now
 
 //----------BLAST OFF START / COUNTDOWN FUNCTION DEFINING-----------------------------------
@@ -53,7 +65,7 @@ function runTimer(countDownStart){
     currTime = 50;
     var timeOut = 5000;
     for (counter = 0; counter < 10; counter++){
-        setTimeout(function(){ //Basically a nested function
+        intervalIds[counter] = setTimeout(function(){ //Basically a nested function
             currTime = currTime-5; // Creating Delay when loading up page
 
             if (currTime < 25){  // changed < to >, creating logic error. 
