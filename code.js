@@ -1,9 +1,25 @@
+// Starttime function
+function startTime() {
+    const today = new Date();
+    let h = today.getHours();
+    let m = today.getMinutes();
+    let s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('timeText').innerHTML =  h + ":" + m + ":" + s;
+    setTimeout(startTime, 1000);
+  }
+  
+// checkTime function
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+
+//IntervalID Array
 var intervalIds = new Array(); //Telling JS that it's going to be an arry. not how many items there is in it. that's not needed.
 
-
-
 //GETTING USER INPUT FUNCTION AND CHARACTER LIMITS
-
 function getUserInput(nameElement){ //Getting the User's Name. 
     //do while function 
     do {
