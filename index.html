@@ -8,13 +8,14 @@
         <script src="code.js"></script> <!-- Pulling info from code.js-->
     </head>
     <center> <!-- <center> generally not used, just to center all the text on this webpage.  -->
-    <body style="background-color: lightyellow;"> 
+    <body onload= "startTime()" style="background-color: lightyellow;"> 
+    
 
 
 <!-- Headers, Images, and Pharagraphs.-->
 <h1> Welcome, <span id="nameInfo"></span> to the UAT Space Program! </h1>
 <img src="UatSpaceLogo.jpg">
-<h3>We are preparing for liftoff! Join us!</h3>   
+<h2>We are preparing for liftoff! Join us!</h2>   
 
 <!-- Audio on Webpage!-->
 <audio controls>
@@ -35,6 +36,11 @@ onClick="alert('This is an alert')";> Funny Button!</button>
 <input type="button" id= "btnStart" value="Start" onclick="startButtonClick();" />
 <input type="button" id= "btnStop" value="Stop" disabled="true" onclick="stopButtonClick();" />
 
+<!--Showing Clock/Time/Whatever-->
+<h3>Current Time:</h3>
+<p>--------------------------------</p>
+<div id="timeText"></div>
+<p>--------------------------------</p>
 
 <!-- Storing Countdown Function-->
 <p>
@@ -53,6 +59,8 @@ onClick="alert('This is an alert')";> Funny Button!</button>
 <!-- <script> changes the code type from HTML to JavaScript-->
 
 <script> 
+
+// Creating Date Object
 
 // Calling getUserInput function from code.js
 getUserInput(document.getElementById("nameInfo"));
