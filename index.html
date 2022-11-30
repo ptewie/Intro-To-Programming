@@ -6,9 +6,21 @@
     <head>
         <title>UAT Space Program!!</title>
         <script src="code.js"></script> <!-- Pulling info from code.js-->
+
+        <style>
+            table, th, td{
+                border: 1px solid rgb(255, 255, 255);
+                padding: 10px;
+                background-color: rgb(49, 49, 49);
+                color: white;
+            }
+            h1, h2, h3, h4, h5, p, div{
+                color: white;
+            }
+            </style>
     </head>
     <center> <!-- <center> generally not used, just to center all the text on this webpage.  -->
-    <body onload= "startTime()" style="background-color: lightyellow;"> 
+    <body onload= "startTime()" style="background-color: rgb(0, 0, 0); text-decoration-color: aliceblue;"> 
     
 
 
@@ -23,7 +35,7 @@
 </audio>
 
 <!-- Opening Pharagraph -->
-<p> 
+<p> ssss
     Psst...Here's a free, high quality MP3 file for... <b>true immersion!</b>
 </p>
 
@@ -64,10 +76,99 @@ onClick="alert('This is an alert')";> Funny Button!</button>
 
 // Calling getUserInput function from code.js
 getUserInput(document.getElementById("nameInfo"));
-
-
-
-
-
-
 </script>
+
+<!--Plopping down a table!-->
+<h3>Space Program Data:</h3> 
+<table id="data" width="500px">
+    <thead></thead>
+        <th>Data Types:</th>   <!-- Headers of the table-->
+        <th>Reading:</th>  
+    </thead>  
+    <tbody>   <!-- Body/Data of the tables-->
+        <tr id="time_elapsed">  <!--each <tr> tag is a new row in the table-->
+            <td>Time elasped:</td> <!-- Time Elapsed-->
+            <td>1210 seconds</td>
+        </tr>
+        <tr id="latitude">   <!--Latitude-->
+            <td>Latitude:</td>
+            <td>0</td>
+        </tr>
+        <tr id="longitude"> <!--Longitude-->
+            <td>Longitude:</td>
+            <td>0</td>
+        </tr>
+        <tr id="gps_altitude"> <!--GPS Altitude-->
+            <td>GPS Altitude:</td>
+            <td>0</td>
+        </tr>
+        <tr id="bmp_sens_altitude"> <!--BMP Sens Altitude-->
+            <td>BMP Sensor Altitude:</td>
+            <td>30383.04</td>
+        </tr>
+        <tr id="bmp_sens_pressure"> <!--BMP Sens Pressure-->
+            <td>BMP Sensor Pressure:</td>
+            <td>2.34</td>
+        </tr>
+        <tr id="bmp_sens_temperature"> <!--BMP Sens Temp-->
+            <td>BMP Sensor Temperature:</td>
+            <td>0</td>
+        </tr>
+        <tr id="digital_sens_temperature"> <!--Digital Sens Temp-->
+            <td>Digital Sensor Temperature:</td>
+            <td>24</td>
+        </tr>
+        <tr id="css_sens_temperature"> <11
+            <td>CSS Sensor Temperature:</td>
+            <td>32.48</td>
+        </tr>
+        <tr id="css_sens_eco2">
+            <td>CSS Sensor eCO2"</td>
+            <td>422</td>
+        </tr>
+        <tr id="css_sens_tvoc">
+            <td>CSS Sensor TVOC:</td>
+            <td>3</td>
+        </tr>
+        <tr id="uv">
+            <td>UV:</td>
+            <td>6</td>
+        </tr>
+        <tr id="accel_x">
+            <td>Accel X:</td>
+            <td>-0.75</td>
+        </tr>
+        <tr id="accel_y">
+            <td>Accel Y:</td>
+            <td>-0.77</td>
+        </tr>
+        <tr id="accel_z">
+            <td>Accel Z:</td>
+            <td>9.35</td>
+        </tr>
+        <tr id="magnetic_x">
+            <td>Magnetic X:</td>
+            <td>-0.08</td>
+        </tr>
+        <tr id="magnetic_y">
+            <td>Magnetic Y:</td>
+            <td>0.36</td>
+        </tr>
+        <tr id="magnetic_z">
+            <td>Magnetic Z:</td>
+            <td>-0.53</td>
+        </tr>
+        <tr id="gyro_x">
+            <td>Gyro X:</td>
+            <td>4.44</td>
+        </tr>
+        <tr id="gyro_y">
+            <td>Gyro Y:</td>
+            <td>-0.95</td>
+        </tr>
+        <tr id="gyro_z">
+            <td>Gyro Z:</td>
+            <td>1.72</td>
+        </tr>
+    </tbody>
+</table>
