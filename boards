@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<h1> Zak Habul </h1>
+<h2> Major: Game Design</h2>
+  <!-- Navigation List -->
+  <nav>
+      <div id="menu">
+          <ul>
+              <li class="active"><a href="file:///Users/home/Desktop/Intro-To-Programming-main/default.html">Home</a></li>
+              <li><a href="file:///Users/home/Desktop/Intro-To-Programming-main/index.html">UAT Space Page</a></li>
+              <li><a href="file:///Users/home/Desktop/Intro-To-Programming-main/boards">Boards</a></li>
+          </ul>
+      </div>
+  </nav>
+      </div>   
+
+<h1> Major Objectives </h1>
+<head>
+    <style>
+        table, th, td{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 10px;
+            background-color: rgb(49, 49, 49);
+            color: white;
+        }
+        h1, h2, h3, h4, h5, p, div{
+            color: white;
+        }
+        </style>
+    <script src="carousel.js"></script>
+    <link rel="stylesheet" href="carousel.css">
+
+
+</head>
+<h2> My objectives are: </h2>
+<main>
+    <p> To prototype and complete original games for multiple platforms following the full game production pipeline.</p>
+    <p> To create and implement game elements, systems, and play mechanics using industry standard tools, techniques, and production methods, including both art and scripting/programming applications. </p>
+    <p> To demonstrate effective game design practices and techniques within the project scope and context such as genre, style, platform and audience. </p>
+    <p> To demonstrate the ability to evaluate game designs for a variety of game play mechanics, game applications and game genres. </p>
+    <p> To effectively articulate game design elements and mechanics across disciplines utilizing written and verbal communication skills. </p>
+    <p> To establish collaboration, mentorship, and professional leadership skills by working with other disciplines to deliver highly polished and completed projects.</p>
+<body style="background-color: rgb(0, 0, 0); text-decoration-color: aliceblue;">
+    <div style="width: 100%; height: 50%;">
+        <section class="slider-wrapper">
+            <button class="slide-arrow" id="slide-arrow-prev">
+              &#8249;
+            </button>
+            <button class="slide-arrow" id="slide-arrow-next">
+              &#8250;
+            </button>
+            <ul class="slides-container" id="slides-container">
+              <li class="slide"></li>
+              <li class="slide"></li>
+              <li class="slide"></li>
+              <li class="slide"></li>
+            </ul>
+          </section>
+        </div>
+          <script>
+            animateCarousel();
+          </script>
+
+
+<footer>
+<p>University of Advancing Technology</p>
+<p>2625 W. Baseline Rd., Tempe, AZ 85283, United States</p>
+<p>zakhabul@gmail.com</p>
+</footer>
+</body>
